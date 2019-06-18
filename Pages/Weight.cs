@@ -30,7 +30,7 @@ namespace AttentiTests.Pages
 
         public double OuncesToGrams(double input)
         {
-            return input * 28.349525F;
+            return input * 28.3495231F;
         }
     }
 }

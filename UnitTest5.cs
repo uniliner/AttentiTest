@@ -29,6 +29,7 @@ namespace AttentiTests
         {
             Temperature tmp = new Temperature();
             tmp.NavigateTo();
+            Thread.Sleep(2000);
             tmp.SetUnits(Helper.Units.Celsius, Helper.Units.Fahrenheit);
             int value = random.Next(-1000, 1000);
             double result = tmp.Convert(value, "°F");
@@ -41,6 +42,7 @@ namespace AttentiTests
         {
             Length len = new Length();
             len.NavigateTo();
+            Thread.Sleep(2000);
             len.SetUnits(Helper.Units.Meters, Helper.Units.Feet);
             int value = random.Next(0, 100000);
             double result = len.Convert(value, "ft", true);
@@ -59,6 +61,7 @@ namespace AttentiTests
         {
             Weight weight = new Weight();
             weight.NavigateTo();
+            Thread.Sleep(2000);
             weight.SetUnits(Helper.Units.Ounces, Helper.Units.Grams);
             int value = random.Next(0, 100000);
             double result = weight.Convert(value, "g");

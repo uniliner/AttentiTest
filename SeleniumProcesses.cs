@@ -41,7 +41,6 @@ namespace AttentiTests
         private void WaitClickable(By by)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
-            wait.PollingInterval = TimeSpan.FromSeconds(1);
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(by));
         }
 
